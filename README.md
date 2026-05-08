@@ -201,15 +201,11 @@ O layout dark foi criado no **Microsoft PowerPoint** e exportado como imagem PNG
 
 ### Página 1 — Visão Geral
 
-> 📸 *Substitua pela imagem real do seu dashboard*
-
-![Dashboard Página 1](assets/dashboard_pagina1.png)
+![Dashboard Página 1](assets/images/dashboardP1-vendas.png)
 
 ### Página 2 — Análise Detalhada
 
-> 📸 *Substitua pela imagem real do seu dashboard*
-
-![Dashboard Página 2](assets/dashboard_pagina2.png)
+![Dashboard Página 2](assets/images/dashboardP2-vendas.png)
 
 ---
 

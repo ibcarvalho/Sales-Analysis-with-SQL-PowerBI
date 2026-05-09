@@ -1,4 +1,4 @@
-# 📊 Sales Analysis Dashboard
+# Sales Analysis Dashboard
 ### Pipeline completo de análise de vendas — SQL · Power BI · DAX
 
 ![Status](https://img.shields.io/badge/Status-Concluído-4FF7B8?style=for-the-badge)
@@ -17,7 +17,7 @@ Fonte de referência:
 https://www.kaggle.com/datasets/fatihilhan/global-superstore-dataset
 
 ---
-## 📑 Índice
+## Índice
 
 1. [Objetivo](#-objetivo)
 2. [Fonte de Dados](#-fonte-de-dados)
@@ -32,7 +32,7 @@ https://www.kaggle.com/datasets/fatihilhan/global-superstore-dataset
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 Desenvolver um dashboard interativo e profissional de ponta a ponta, cobrindo todas as etapas de um projeto real de Business Intelligence: da extração e limpeza dos dados no SQL até a visualização final no Power BI, com medidas DAX para análise de desempenho de vendas entre 2021 e 2024.
 
@@ -44,7 +44,7 @@ O projeto tem como finalidade demonstrar competências em:
 
 ---
 
-## 🗄️ Fonte de Dados
+## Fonte de Dados
 
 | Item | Detalhe |
 |---|---|
@@ -59,7 +59,7 @@ O projeto tem como finalidade demonstrar competências em:
 
 ---
 
-## 🚀 Etapas do Projeto
+## Etapas do Projeto
 
 ```
  1. Ingestão        →  Carregamento do .xlsx no SQL Server
@@ -81,7 +81,7 @@ O projeto tem como finalidade demonstrar competências em:
 
 ---
 
-## 🔧 Procedimentos
+## Procedimentos
 
 ### SQL — Limpeza e Transformação
 
@@ -109,7 +109,7 @@ SELECT
         WHEN discount <= 0.50   THEN '31 a 50%'
         ELSE                         'Acima de 50%'
     END AS faixa_desconto
-FROM raw_sales
+FROM Sales Overview Data
 WHERE order_date IS NOT NULL
   AND sales > 0;
 ```
@@ -137,7 +137,7 @@ SWITCH(TRUE(),
 
 ---
 
-## 📊 Análise Exploratória
+## Análise Exploratória
 
 ### Resumo Geral
 
@@ -180,7 +180,7 @@ SWITCH(TRUE(),
 
 ---
 
-## 🎨 Layout de Fundo do Dashboard
+## Layout de Fundo do Dashboard
 
 O layout dark foi criado no **Microsoft PowerPoint** e exportado como imagem PNG para ser usado como plano de fundo no Power BI.
 
@@ -209,7 +209,7 @@ O layout dark foi criado no **Microsoft PowerPoint** e exportado como imagem PNG
 
 ---
 
-## 📈 Visualizações
+## Visualizações
 
 ### Página 1 — Visão Geral
 
@@ -245,7 +245,7 @@ O layout dark foi criado no **Microsoft PowerPoint** e exportado como imagem PNG
 
 ---
 
-## ⚡ Medidas DAX
+## Medidas DAX
 
 ### KPIs Base
 
@@ -317,7 +317,7 @@ Ticket Médio $  = "$ " & FORMAT([Ticket Médio], "#,##0.00")
 
 ---
 
-## 💡 Insights
+## Insights
 
 **1. Crescimento acelerado em 2024**
 A receita cresceu **+20,35%** e os pedidos **+28,35%** em relação a 2023 — o maior crescimento dos 4 anos analisados, indicando expansão sólida da operação.
@@ -342,7 +342,7 @@ Cerca de **60% dos pedidos** usam Entrega Padrão. O modelo Mesmo Dia representa
 
 ---
 
-## 📌 Recomendações
+## Recomendações
 
 **1. Revisar política de descontos**
 Estabelecer teto de **20% de desconto máximo**. Descontos acima de 30% devem exigir aprovação gerencial — a análise mostra que são sistematicamente deficitários.
@@ -364,7 +364,7 @@ Criar uma oferta estruturada de entrega Same Day com margem premium pode aumenta
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **SQL Server** — limpeza, transformação e modelagem dos dados brutos
 - **Power BI Desktop** — modelagem Star Schema, tabela calendário e dashboard interativo
@@ -374,7 +374,7 @@ Criar uma oferta estruturada de entrega Same Day com margem premium pode aumenta
 
 ---
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 sales-analysis-powerbi/
